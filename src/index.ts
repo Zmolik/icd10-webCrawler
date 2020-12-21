@@ -70,6 +70,8 @@ async function main(fileNameInput, fileNameOutput) {
 
     for (let i = 1; i < jsonIn.length; i++) {
         try {
+            // I would like to make asychronous loop, and after every elements in the loop are processed, I would like to save it to a file
+            // But I don't know how to do it (other then using Timeout -> see callback_version.ts), any idea?
             await scrapeUrl(jsonIn[i].searchUrl, (data) => {
                 jsonOut.push(
                     {
