@@ -40,6 +40,7 @@ function getData(jsonIn, callback) {
                 }
             )
             if (i == jsonIn.length - 1) {
+             // dont know how to wait for the end of asynchronous for loop so I set an artificial Timeout, better idea?
                 setTimeout( () => {callback(jsonOut)}, 50000)
             }
         })
