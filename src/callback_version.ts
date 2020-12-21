@@ -49,7 +49,7 @@ function getData(jsonIn, callback) {
 }
 
 
-const fileIn = fs.readFileSync(path.join(__dirname, '..', 'json', 'diagnosis-list-SearchUrl.json'), 'utf-8');
+const fileIn = fs.readFileSync(path.join(__dirname, '..', 'json', 'searchUrl.json'), 'utf-8');
 const jsonIn = JSON.parse(fileIn);
 
 getData(jsonIn, (jsonOut) => {
